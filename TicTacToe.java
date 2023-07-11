@@ -6,7 +6,7 @@ public class TicTacToe {
 
     public static void main(String[] args) {
         
-        JFrame f = new JFrame("challenge 1");
+        JFrame f = new JFrame("Tic Tac Toe");
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Container pane = f.getContentPane();
         pane.setLayout(new BorderLayout());
@@ -15,15 +15,15 @@ public class TicTacToe {
 
         final JButton[] buttons = new JButton[9];
         for(int i = 0; i < 9; i++) {
-            JButton tmpButton = new JButton("");
-            buttons[i] = tmpButton;
+
+            buttons[i] = new JButton("");
+            buttons[i].setFont(new Font("OpenSans", Font.PLAIN, 36));
             myContainer.add(buttons[i]);
 
             buttons[i].addActionListener((event) -> {
                 JButton tmp = (JButton) event.getSource();
                 if(tmp.getText().equals("")) {
                     tmp.setText("X");
-                    // tmp.setFont(new Font("OpenSans", Font.ITALIC, 18));
                 }
                 else if(tmp.getText().equals("X")) {
                     tmp.setText("O");
