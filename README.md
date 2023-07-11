@@ -1,2 +1,2 @@
 # Nikhil-Workshops
- Content related to Workshops conducted by Nikhil Bhamidipati
+ Content related to workshops conducted by me
